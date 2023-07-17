@@ -1,0 +1,15 @@
+.button-container {
+    display: flex;
+    /* Use flexbox layout */
+    justify-content: flex-start;
+    /* Align buttons to the left */
+    align-items: center;
+    /* Vertically center the buttons */
+    margin-bottom: 20px;
+    /* Optional: Add some margin between the buttons and other elements */
+}
+
+.button-container button {
+    margin-right: 10px;
+    /* Optional: Add some spacing between the buttons */
+}

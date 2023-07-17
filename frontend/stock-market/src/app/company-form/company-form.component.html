@@ -1,0 +1,19 @@
+<div class="company-form">
+    <h3>Add Company</h3>
+    <form (ngSubmit)="submitForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" [(ngModel)]="company.name" required>
+
+        <label for="ceo">CEO:</label>
+        <input type="text" id="ceo" name="ceo" [(ngModel)]="company.ceo" required>
+
+        <label for="turnover">Turnover:</label>
+        <input type="number" id="turnover" name="turnover" [(ngModel)]="company.turnover" required>
+
+        <label for="code">Code:</label>
+        <input type="text" id="code" name="code" [(ngModel)]="company.code" required>
+
+        <button type="submit">Add</button>
+        <button type="button" (click)="closeForm()">Cancel</button>
+    </form>
+</div>
